@@ -3,6 +3,7 @@ import Header from '../../components/Header'
 import { useEffect } from 'react'
 import { useSession } from 'next-auth/react'
 import { useRouter } from 'next/router'
+import Head from 'next/head'
 
 function signIn({ providers }) {
     const { data: session } = useSession()
@@ -14,6 +15,10 @@ function signIn({ providers }) {
     }, [session])
     return (
         <>
+            <Head>
+                <title>Sign In</title>
+                <link rel="icon" href="/favicon.ico" />
+            </Head>
             <Header />
             <div className='flex flex-col bg-gray-50 items-center justify-center min-h-screen px-4 text-center'>
                 <div className='text-3xl sm:text-5xl'>Sign in to<br /><span className='text-teal-400 font-semibold'>TODO App</span></div>
