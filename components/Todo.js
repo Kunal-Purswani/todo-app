@@ -23,7 +23,7 @@ function Todo({ id, task, isDone }) {
                 <p className={'' + (isDone ? 'line-through' : '')}>{task}</p>
             </div>
             <div className='flex justify-around items-center w-20 '>
-                <CheckIcon onClick={checked} className={isDone ? 'bg-gray-700 text-gray-50 rounded-md h-8 w-8 cursor-pointer p-1 transition-all duration-200 ease-out' : 'h-8 w-8 cursor-pointer p-1'}></CheckIcon>
+                <CheckIcon onClick={checked} className={'h-8 w-8 cursor-pointer p-1 transition-all duration-900 ease rounded-lg ' + (isDone ? 'bg-gray-700 text-gray-50 h-8 w-8 cursor-pointer p-1 transition-all duration-800 ease' : '')}></CheckIcon>
                 <TrashIcon onClick={deleted} className='h-8 w-8 cursor-pointer p-1'></TrashIcon>
             </div>
             <hr />
