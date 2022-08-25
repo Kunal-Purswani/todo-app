@@ -31,8 +31,8 @@ function Todos() {
         }
     })
     return (
-        <div className='h-[80%] z-0 mt-8 flex justify-center'>
-            <div className='w-full mx-3 sm:w-[80%] sm:mx-0'>
+        <div className='h-[70%] z-0 mt-8 flex justify-center '>
+            <div className='w-full mx-3 px-3 sm:w-[90%] sm:mx-0 lg:w-[85%] overflow-auto scrollbar-none sm:scrollbar-thumb-rounded sm:scrollbar-thumb-teal-100 sm:scrollbar-track-slate-200 sm:scrollbar-thin'>
                 {
                     arr
                 }

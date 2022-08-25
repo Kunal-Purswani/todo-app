@@ -18,13 +18,14 @@ function Input() {
     }
     const addTodo = async () => {
         if (todo.trim().length) {
+            const temp = todo;
+            setTodo('')
             await addDoc(collection(db, 'users'), {
                 uid: session.user.uid,
                 task: todo,
                 isDone: false,
                 timestamp: serverTimestamp()
             })
-            setTodo('')
         }
     }
     return (

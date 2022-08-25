@@ -16,7 +16,7 @@ export default function Home() {
       router.push('/auth/signin')
   }, [])
   return (
-    <div className="bg-gray-50 h-screen overflow-y-scroll scrollbar-hide" >
+    <div className="bg-gray-50 h-screen overflow-y-scroll scrollbar-none" >
       <Head>
         <title>To-Do App</title>
         <link rel="icon" href="/favicon.ico" />
