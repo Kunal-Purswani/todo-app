@@ -18,6 +18,7 @@ export default function Home() {
   return (
     <div className="bg-gray-50 h-screen overflow-y-scroll scrollbar-none" >
       <Head>
+        <script defer data-domain="kunal-todo-app.vercel.app" src="https://plausible.io/js/script.js"></script>
         <title>To-Do App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
